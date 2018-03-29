@@ -22,6 +22,8 @@ body {
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
   align-items: center;
   border-bottom: 1px solid rgba(220, 220, 220, 0.4);
 }
@@ -78,6 +80,7 @@ body {
 .posts-wrapper{
   width: 94%;
   margin: 40px auto;
+  min-height: 600px;
 }
 
 .post{
@@ -89,6 +92,7 @@ body {
   font-size: 1em;
   padding: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .comments-wrapper{
@@ -108,6 +112,30 @@ body {
   margin-right: 10px;
 }
 
+.footer{
+  width: 94%;
+  margin: 20px auto 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-item{
+  width: 30%;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link{
+  color: #000;
+  text-decoration: underline dotted;
+}
+
+.footer-link:hover{
+  color: orange;
+  cursor: pointer;
+}
 
 
 

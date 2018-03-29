@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class App extends Component {
   render() {
     return (
@@ -17,9 +16,9 @@ class App extends Component {
           </div>
         </div>
         <div className="header-end">
-          <a href="#">Ру</a>
-          <a href="#">En</a>
-          <a href="#">Ққ</a>
+          <a>Ру</a>
+          <a>En</a>
+          <a>Ққ</a>
         </div>
       </div>
     );

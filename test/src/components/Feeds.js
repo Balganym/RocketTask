@@ -53,7 +53,7 @@ class Feeds extends Component {
           if(this.state.number+c.id > this.props.comments.length)
             return <Feed key={c.id} comment={c}/>
           else{
-            return 
+            return <p key={c.id}></p> 
           }
         })}
         <p style={{display: this.state.display}} className="more" onClick={this.loadMoreComments}>Еще</p>

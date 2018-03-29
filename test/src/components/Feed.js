@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Comment, Form, Header } from 'semantic-ui-react'
-import Feeds from "./Feeds.js"
+import { Comment } from 'semantic-ui-react'
+
 class Feed extends Component {
   render() {
     return (
