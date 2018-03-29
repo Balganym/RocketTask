@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: PtSans-CaptionBold,Helvetica,Arial,sans-serif;
+}
+
+.App{
+  width: 100%;
+}
+
+.header{
+  width: 94%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.4);
+}
+
+.header-start{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .header-start .logo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header .header-start .logo .logo-img{
+  width: 30px;
+  padding: 0 4px;
+}
+
+.header .header-start .logo p{
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.header .header-start .menu .menu-item{
+  font-size: 1em;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.header .header-start .menu .menu-item a{
+  color: #000;
+}
+
+
+.header .header-end{
+  display: flex;
+}
+
+.header .header-end a{
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 0.8em;
+}
+
+.posts-wrapper{
+  width: 94%;
+  margin: 40px auto;
+}
+
+.post{
+  width: 80%;
+  margin: 10px auto 40px auto;
+}
+
+.more{
+  font-size: 1em;
+  padding: 10px;
+  text-align: center;
+}
+
+.comments-wrapper{
+  width: 94%;
+  margin: 20px auto;
+}
+
+.lineItem{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lineItem .lineItem-title{
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
