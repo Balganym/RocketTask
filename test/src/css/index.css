@@ -53,10 +53,18 @@ body {
   padding: 0;
 }
 
+.header .header-start .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .header .header-start .menu .menu-item{
   font-size: 1em;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   cursor: pointer;
+  margin: 0;
+  margin-right: 16px;
 }
 
 .header .header-start .menu .menu-item a{
@@ -86,6 +94,8 @@ body {
 .post{
   width: 80%;
   margin: 10px auto 40px auto;
+
+  transition: opacity .15s ease-in-out;
 }
 
 .more{

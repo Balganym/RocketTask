@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Feed from "./Feed.js"
 import 'semantic-ui-css/semantic.min.css';
 import {Input, TextArea, Button, Comment, Form, Header } from 'semantic-ui-react'
+import {Facebook} from 'react-content-loader'
 
 class Feeds extends Component {
   constructor(props){
@@ -49,21 +50,21 @@ class Feeds extends Component {
     return (
       <Comment.Group size='large'>
         <Header as='h1' dividing>Комментарии</Header>
-        {this.props.comments.slice(0).reverse().map(c=>{
-          if(this.state.number+c.id > this.props.comments.length)
+        {this.props.comments.map(c => {
+          if(this.state.number + c.id > this.props.comments.length)
             return <Feed key={c.id} comment={c}/>
           else{
             return <p key={c.id}></p> 
           }
         })}
-        <p style={{display: this.state.display}} className="more" onClick={this.loadMoreComments}>Еще</p>
+        <a style={{display: this.state.display}} className="more" onClick={this.loadMoreComments}>Еще</a>
         <Form reply>
           <div className="lineItem">
             <p className="lineItem-title">Ваше имя:</p> 
             <Input value={this.state.author} onChange={this.handleName}/>
           </div>
           <TextArea value={this.state.comment} onChange={this.handleText} style={{marginBottom: 20}}/>
-          <Button content='Add Reply' labelPosition='left' icon='edit' primary onClick={this.reply} />
+          <Button content='Отправить' labelPosition='left' icon='edit' primary onClick={this.reply} />
         </Form>
       </Comment.Group>
     );

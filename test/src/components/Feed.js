@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Comment } from 'semantic-ui-react'
+import {Facebook} from 'react-content-loader'
 
 class Feed extends Component {
   render() {
